@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Diary</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/jquery.1.9.1.min.js"></script>
+  <script src="js/miso.ds.deps.ie.0.4.1.js"></script>
+</head>
+<body>
+  <div id="week-wrapper">
+  </div>  
+
+  <script type="text/jst" id="week-templ">
+    <div class="week-container">
+        <center><img src="img/<%= photo %>" width="50%"/></center>
+        <div class="day"><%= day %></div>
+        <div class="time"><%= time %></div>
+        <div class="highlight"><%= highlight %></div>
+    </div>
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
